@@ -19,6 +19,56 @@ nav ul{
     margin-bottom: 0;
 }
 body{
-    margin: 0;
-    font-family: sans-serif;
+
+    font-family:'barlow', sans-serif;
+    background-color: #FFF;
+   padding:24px;
+}
+.title{
+   font-size:3rem;
+   font-weight:900;
+   color:#162542;
+}
+.text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #7B8BAD;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem ;
+}
+.button{
+    font-family: inherit;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+}
+.button-grey{
+    background-color: #E8EFF2;
+    color: #162542 ;
+}
+.button-orange{
+    background-color: #F16718;
+    color: #FFF;
+}
+.spam{
+    font-family: inherit;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.625rem;
+    color: #7B8BAD;
+}
+.main-menu{
+    display:flex;
+    padding: 1.5rem;
+    justify-content: space-between;
 }
