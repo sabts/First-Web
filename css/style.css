@@ -19,10 +19,33 @@ nav ul{
     margin-bottom: 0;
 }
 body{
-
+    margin: 0;
     font-family:'barlow', sans-serif;
     background-color: #FFF;
-   padding:24px;
+}
+.header{
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    margin-bottom: 4.25rem;
+}
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1.5rem;
+    padding-bottom: 4.25rem;
+}
+.header-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+.call-action{
+    display: flex;
+    justify-content: space-evenly;
+
+    margin-bottom: 4rem;
 }
 .title{
    font-size:3rem;
@@ -32,43 +55,35 @@ body{
 .text{
     font-size: 1rem;
     font-weight: 500;
+    line-height:1.6rem;
     color: #7B8BAD;
-}
-.main-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem ;
+    margin-bottom: 2rem;
 }
 .button{
     font-family: inherit;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.6rem 0.8rem;
     border: none;
-    font-size: 1rem;
     font-weight: 700;
-    line-height: 1.625rem;
 }
-.button-grey{
+.button-primary{
     background-color: #E8EFF2;
     color: #162542 ;
 }
-.button-orange{
+.button-secondary{
     background-color: #F16718;
     color: #FFF;
 }
-.spam{
+.span{
     font-family: inherit;
     border-radius: 0.5rem;
-    padding: 0.5rem;
-    border: none;
-    font-size: 1rem;
+    padding: 0.6rem 0.8rem;
     font-weight: 700;
-    line-height: 1.625rem;
     color: #7B8BAD;
 }
-.main-menu{
-    display:flex;
-    padding: 1.5rem;
-    justify-content: space-between;
+.image{
+    border-radius: 1.25rem;
+}
+.image-header{
+    border-radius: 1.25rem 0 0 1.25rem;
 }

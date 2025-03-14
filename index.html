@@ -13,20 +13,22 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="main-menu">
-      <img src="./assets/shared/logo.svg" alt="" />
-      <button class="button button-gray">PRE-ORDER NOW</button>
-    </header>
-    <section class="main-container">
-      <section>
+    <header class="header">
+      <div class="top-bar">
+        <img src="./assets/shared/logo.svg" alt="" />
+      <button class="button button-primary">PRE-ORDER NOW</button>
+    </div>
+      <section class="header-content">
+        <section>
         <h1 class="title">TYPEMASTER KEYBOARD</h1>
         <p class="text">
           Improve your productivity and gaming without breaking the bank.
           Upgrade to a high quality mechanical typing experience.
         </p>
-        <button class="button button-orange">PRE-ORDER NOW</button>
-        <span class="spam">RELEASE ON 5/27</span>
-      </section>
+         <div class="call-action">
+        <button class="button button-secondary">PRE-ORDER NOW</button>
+        <span class="span">RELEASE ON 5/27</span>
+      </div>
       <picture>
         <source
           media="(min-width:1024px)"
@@ -40,8 +42,13 @@
           media="(min-width:360px)"
           srcset="./assets/mobile/image-keyboard.jpg"
         />
-        <img src="./assets/mobile/image-keyboard.jpg" alt="" />
+        <img class="image image-header" src="./assets/mobile/image-keyboard.jpg" alt="" />
       </picture>
+      </section>
+    </header>
+    <main>
+    <section class="main-container">
     </section>
+  </main>
   </body>
 </html>
