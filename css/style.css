@@ -26,7 +26,7 @@ body{
 .header{
     padding-left: 1.5rem;
     padding-top: 1.5rem;
-    margin-bottom: 4.25rem;
+    margin-bottom: 0m;
 }
 .top-bar{
     display: flex;
@@ -34,23 +34,70 @@ body{
     padding-right: 1.5rem;
     padding-bottom: 4.25rem;
 }
-.header-content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+@media screen and (width>768px){
+    .header{
+        padding-left:2.4375rem;
+        padding-top: 2.5rem;
+    }
+    .top-bar{
+        padding-right: 2.5rem;
+    }
+    .header-content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 26.5625rem;
+        overflow: hidden;
+
+    }
+    .header-info{
+        width: 21.25rem;
+    }
+}
+@media screen and (width>1040px){
+    .header{
+        padding-left:10.3125rem;
+        padding-top: 3.4375rem;
+    }
+    .top-bar{
+        padding-right: 10.3125rem;
+    }
+    .header-content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 26.5625rem;
+        overflow: hidden;
+    }
+    .header-content::after{
+        content:"";
+        position: absolute;
+        top: 0;
+        left: 58.125rem;
+        width: 14.0625rem;
+        height: 15rem;
+        border-radius: 1.25rem;
+        background-color: #E8EFF2;
+    }
+    .header-info{
+        width: 21.25rem;
+    }
 }
 .call-action{
     display: flex;
     justify-content: space-evenly;
-
     margin-bottom: 4rem;
 }
-.title{
+.title-xl{
    font-size:3rem;
    font-weight:900;
    color:#162542;
+}
+.title-l{
+    font-weight:900;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
 }
 .text{
     font-size: 1rem;
@@ -75,15 +122,113 @@ body{
     color: #FFF;
 }
 .span{
-    font-family: inherit;
-    border-radius: 0.5rem;
     padding: 0.6rem 0.8rem;
     font-weight: 700;
     color: #7B8BAD;
 }
 .image{
     border-radius: 1.25rem;
+    margin-bottom: 1.5rem;
 }
 .image-header{
     border-radius: 1.25rem 0 0 1.25rem;
 }
+@media screen and (width>768px){
+    .image-header{
+    position:absolute;
+    top: 0;
+    left: 26.5625rem;
+    height: 26.5625rem;    }
+}
+@media screen and (width>1040px){
+    .image{border-radius: 1.25rem;}
+    .image-header{
+    position:absolute;
+    top: 0;
+    left: 26.5625rem;
+    height: 26.5625rem;    }
+} 
+.image-small{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 1.25rem 1.25rem 0;
+}
+.image-medium{
+    width: 100%;
+    height: 100%;
+    border-radius: 1.25rem;
+}
+.image-container{
+    position: relative;
+}
+.image-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 1.25rem 1.25rem 0;
+    background-color: #F16718;
+    mix-blend-mode: multiply;
+}
+.main{
+    padding-right: 1.5rem;
+}
+.main-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.picture-section{
+    display:flex;
+    gap: 1.5rem;
+    margin-bottom:4.6875rem;
+}
+.section-info{
+    padding-inline: 2rem;
+}
+
+@media screen and (width>768px){
+    .image-small{
+        border-radius: 1.25rem;
+    }
+    .image-container::after{
+        content: "";
+        border-radius: 1.25rem;}
+
+    .main{
+        padding-top: 1.5rem;
+        padding-right: 2.4375rem;
+        padding-left: 2.4375rem;
+    }
+    .main-section{
+        align-items:center
+    }
+    .section-info{
+        display: flex;
+        padding-inline: 2.5rem;
+        text-align: justify;
+        align-items: center;
+        gap:2.25rem;
+    }
+} 
+@media screen and (width>1040px){
+    .main{
+        padding-top: 1.5rem;
+        padding-left:10.3125rem ;
+        padding-right: 10.3125rem;
+    }
+    .main-section{
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }  
+    }
+    .section-info{
+        display: flex;
+        width: 256px;
+        height: 267px;
+        flex-direction: column;
+        gap: 0;
+    }
