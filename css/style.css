@@ -112,6 +112,9 @@ body{
     color: #7B8BAD;
     margin-bottom: 2rem;
 }
+.text-footer{
+    font-weight:700;
+}
 .button{
     font-family: inherit;
     border-radius: 0.5rem;
@@ -126,6 +129,15 @@ body{
 .button-secondary{
     background-color: #F16718;
     color: #FFF;
+}
+@media (hover: hover){
+    .button-primary:hover{
+        color: #FFF;
+        background-color: #162542;
+    }
+    .button-secondary:hover{
+    background-color:#FF9B62;
+    }
 }
 .span{
     padding: 0.6rem 0.8rem;
