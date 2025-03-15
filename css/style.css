@@ -238,8 +238,8 @@ body{
 } 
 .features-section{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    padding-inline: 1.5rem;
     gap:4rem;
 }
 .card{
@@ -247,7 +247,6 @@ body{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 1.5rem;
 }
 .icon{   
     display: flex;
@@ -260,4 +259,32 @@ body{
 }
 .card-info{
     width: 20.4375rem
+}
+@media screen and (width>768px){
+    .features-section{
+       padding-inline: 2.5rem;
+    }
+    .card{
+        align-items: start;
+        text-align: left;
+    }
+} 
+@media screen and (width>1040px){
+    .features-section{
+        flex-wrap: nowrap;
+        justify-content: center;
+       padding-inline: 10.3125rem;
+       gap: 1.5rem;
+    }
+    .card{
+        align-items: start;
+        text-align: left;
+    }
+    .card-info{
+        width: 15.9375rem;
+    }
+} 
+.footer{
+    display: flex;
+    justify-content: center;
 }
