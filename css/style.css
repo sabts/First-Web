@@ -97,6 +97,12 @@ body{
 }
 .title-l{
     font-size: 2rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+}
+.title-m{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
     text-transform: uppercase;
 }
 .text{
@@ -184,6 +190,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 6rem;
  }
 .picture-section{
     padding-right: 1.5rem;
@@ -197,6 +204,7 @@ body{
 }
 @media screen and (width>768px){
     .picture-section{
+        gap: 1.875rem;
         padding-top: 1.5rem;
         padding-left:2.4375rem ;
         padding-right: 2.4375rem;
@@ -209,3 +217,47 @@ body{
         gap: 2.25rem;
     }
 } 
+@media screen and (width>1040px){
+    .main-section{
+        flex-wrap: nowrap;
+        padding-inline: 10.3125rem;
+        gap: 4rem;
+    }
+    .picture-section{
+        width: 100;
+        padding-top: 1.5rem;
+        padding-inline: 0;
+    }
+    .section-info{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        text-align: left;
+        gap: 0%;
+    }
+} 
+.features-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:4rem;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+}
+.icon{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:4.0625rem;
+    width: 4.0625rem;
+    border-radius: 1rem;
+    background-color: #F16718;
+}
+.card-info{
+    width: 20.4375rem
+}
