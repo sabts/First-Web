@@ -219,9 +219,20 @@ body{
 } 
 @media screen and (width>1040px){
     .main-section{
+        position: relative;
         flex-wrap: nowrap;
         padding-inline: 10.3125rem;
         gap: 4rem;
+    }
+    .main-section::after{
+        content:"";
+        position: absolute;
+        top: 10.4rem;
+        left: -5.625rem;
+        width: 14.0625rem;
+        height: 15rem;
+        border-radius: 1.25rem;
+        background-color: #E8EFF2;
     }
     .picture-section{
         width: 100;
